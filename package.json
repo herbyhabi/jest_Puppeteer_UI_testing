@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "nope",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^1.18.1"
+  },
+  "preset": "jest-puppeteer"
+}
