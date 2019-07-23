@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/js-base64" level="application" />
+    <orderEntry type="library" name="Jquery" level="project" />
   </component>
 </module>
