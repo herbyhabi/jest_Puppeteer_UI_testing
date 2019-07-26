@@ -4,12 +4,13 @@ let page;
 
 beforeAll(async ()=>{
     browser = await puppeteer.launch({
-        args: ['--start-maximized'], //浏览器窗口最大化
-        headless: false, //开启或关闭无头模式
-        ignoreHTTPSErrors:true,
-        slowMo:250, //slow down by 250ms
-        timeout:0,
-        devtools: false //打开或关闭浏览器的开发者模式
+            args: ['--start-maximized'], //浏览器窗口最大化
+            headless: false, //开启或关闭无头模式
+            ignoreHTTPSErrors:true,
+            slowMo:250, //slow down by 250ms, 减慢运行的速度，更好的看清楚操作
+            timeout:15000,
+            ignoreHTTPSErrors:true,//若访问的是https页面，则忽略https错误
+            devtools: false, //打开或关闭浏览器的开发者模式
     });
     page = await browser.newPage();
     page.setViewport({
